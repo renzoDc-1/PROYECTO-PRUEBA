@@ -5,6 +5,7 @@ from module.multiplicar import multiplicar
 from module.division import division
 
 os.system("cls")
+os.system("color a")
 
 def message():
     print("CALCULOS BASICOS AUTOMATICOS ")
