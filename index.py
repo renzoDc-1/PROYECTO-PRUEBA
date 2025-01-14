@@ -7,7 +7,7 @@ from module.division import division
 os.system("cls")
 
 def message():
-    print("Calculadora ")
+    print("CALCULOS BASICOS AUTOMATICOS ")
 
 def calcular(a, b, signo):
     if signo == '+':
