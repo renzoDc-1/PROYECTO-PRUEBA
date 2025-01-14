@@ -2,6 +2,7 @@ import os
 from module.sum import suma
 from module.resta import resta
 from module.multiplicar import multiplicar
+from module.division import division
 
 os.system("cls")
 
