@@ -2,6 +2,7 @@ import os
 from module.sum import suma
 from module.resta import resta
 from module.multiplicar import multiplicar
+from module.division import division
 
 os.system("cls")
 
@@ -34,4 +35,12 @@ def llamar_multiplicacion():
     print(f"La multiplicacion de {a} y {b} es {resultado}")
 
 llamar_multiplicacion()
+
+def llamar_division():
+    a = int(input("Ingrese el primer número: "))
+    b = int(input("Ingrese el segundo número: "))
+    resultado = division(a, b)
+    print(f"La division de {a} y {b} es {resultado}")
+
+llamar_division()
 
