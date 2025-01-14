@@ -1,6 +1,7 @@
 import os
 from module.sum import suma
 from module.resta import resta
+from module.multiplicar import multiplicar
 
 os.system("cls")
 
@@ -12,12 +13,14 @@ def calcular(a, b, signo):
         return suma(a, b)
     elif signo == '-':
         return resta(a, b)
+    elif signo == '*':
+        return multiplicar(a, b)
     else:
         return "Signo no válido"
 
 def obtener_entrada():
     a = int(input("Ingrese el primer número: "))
-    signo = input("Ingrese el signo (+ o -): ")
+    signo = input("Ingrese el signo (+, - o *): ")
     b = int(input("Ingrese el segundo número: "))
     return a, signo, b
 
