@@ -16,12 +16,14 @@ def calcular(a, b, signo):
         return resta(a, b)
     elif signo == '*':
         return multiplicar(a, b)
+    elif signo == '/':
+        return division(a, b)
     else:
         return "Signo no válido"
 
 def obtener_entrada():
     a = int(input("Ingrese el primer número: "))
-    signo = input("Ingrese el signo (+, - o *): ")
+    signo = input("Ingrese el signo (+, -, *, /): ")
     b = int(input("Ingrese el segundo número: "))
     return a, signo, b
 
