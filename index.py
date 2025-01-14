@@ -1,6 +1,7 @@
 import os
 from module.sum import suma
 from module.resta import resta
+from module.multiplicar import multiplicar
 
 os.system("cls")
 
@@ -18,12 +19,6 @@ def llamar_suma():
 
 llamar_suma()
 
-
-def multiplicar(a, b):
-    return a * b
-
-print(multiplicar(2, 3))
-
 def llamar_resta():
     a = int(input("Ingrese el primer número: "))
     b = int(input("Ingrese el segundo número: "))
@@ -31,3 +26,12 @@ def llamar_resta():
     print(f"La resta de {a} y {b} es {resultado}")
 
 llamar_resta()
+
+def llamar_multiplicacion():
+    a = int(input("Ingrese el primer número: "))
+    b = int(input("Ingrese el segundo número: "))
+    resultado = multiplicar(a, b)
+    print(f"La multiplicacion de {a} y {b} es {resultado}")
+
+llamar_multiplicacion()
+
