@@ -12,3 +12,8 @@ def resta(a, b):
     return a - b
 
 print(resta(2, 3))
+
+def multiplicar(a, b):
+    return a * b
+
+print(multiplicar(2, 3))
